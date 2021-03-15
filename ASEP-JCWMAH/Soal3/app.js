@@ -8,8 +8,7 @@ var hurufKonsonan = []
 
 function tampilKalimat(e){
   e.preventDefault()
-  let teks = 'aKu ProGRAmmer'
-  getVokalKonsonan(teks)
+  getVokalKonsonan(inputTeks)
   let result = `Kalimat = ${titleCase(teks)} <br>
   Huruf vokal = ${hurufVokal.join('')} <br>
   Huruf konsonan = ${hurufKonsonan.join('')} <br>
