@@ -1,4 +1,4 @@
-var inputTeks = document.getElementById('texk')
+
 var elForm = document.getElementById('elForm')
 elForm.addEventListener('submit', tampilKalimat, false)
 var vokal = 'aiueo'
@@ -8,15 +8,16 @@ var hurufKonsonan = []
 
 function tampilKalimat(e){
   e.preventDefault()
+  let inputTeks = document.getElementById('textData').value
   getVokalKonsonan(inputTeks)
-  let result = `Kalimat = ${titleCase(teks)} <br>
+  let result = `Kalimat = ${titleCase(inputTeks)} <br>
   Huruf vokal = ${hurufVokal.join('')} <br>
   Huruf konsonan = ${hurufKonsonan.join('')} <br>
   Jumlah jenis huruf vokal = ${hurufVokal.length} <br>
   Jumlah jenis huruf konsonan = ${hurufKonsonan.length}
-  
   `
   document.getElementById('result').innerHTML = result
+  // console.log(document.getElementById('textData').value)
 }
 
 function titleCase(teks){
