@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo List App</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div id="todo-app">
+    <h2>Kegiatan Selama Pandemi</h2>
+    <table>
+      <tr align="center">
+        <form id="elForm">
+          <td></td>
+          <td><input type="date" id="dateActivity"></td>
+          <td>
+            <input type="text" id="timeActivity" placeholder="Jam"> 
+            <select id="amPm">
+              <option value="AM">AM</option>
+              <option value="PM">PM</option>
+            </select>
+          </td>
+          <td><input type="text" id="activity" placeholder="Kegiatan"></td>
+          <td><input type="text" id="imagesActivity" placeholder="link gambar"></td>
+          <td><button type="submit">Tambah</button></td>
+        </form>
+      </tr>
+      <tr align="center">
+        <td>No</td>
+        <td>Tanggal</td>
+        <td>Jam</td>
+        <td>Kegiatan</td>
+        <td>Lokasi</td>
+        <td>Setting</td>
+      </tr>
+      <tbody id="activitesData"></tbody>
+    </table>
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>

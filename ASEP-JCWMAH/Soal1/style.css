@@ -1,0 +1,10 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+#soal, #result{
+  padding: 10px;
+}
+#soal *{
+  margin-right:5px;
+}
